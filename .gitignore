@@ -1,0 +1,7 @@
+# Ignore everthing
+*
+
+# Except
+!.gitignore
+!*.yml
+!*.properties
