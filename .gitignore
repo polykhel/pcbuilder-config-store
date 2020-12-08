@@ -1,8 +1,0 @@
-# Ignore everthing
-*
-
-# Except
-!.gitignore
-!config/*.yml
-!config/*.properties
-!README.md
