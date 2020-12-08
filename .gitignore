@@ -3,5 +3,6 @@
 
 # Except
 !.gitignore
-!*.yml
-!*.properties
+!config/*.yml
+!config/*.properties
+!README.md
