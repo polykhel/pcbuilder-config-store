@@ -1,21 +1,52 @@
 server:
   port: 8082
+  servlet.session:
+    cookie.max-age: 0
+    timeout: 0
+  
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/pcb_auth
+    url: jdbc:mysql://localhost:3306/pcb_auth?serverTimeZone=Asia/Singapore
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
+    hibernate.ddl-auto: validate
+    open-in-view: false
     properties:
       hibernate:
+        dialect:
+          storage_engine: innodb
+        jdbc:
+          time_zone: Asia/Singapore
         show_sql: true
         format_sql: true
   redis:
     host: redis-service
+    
+security:
+  oauth2:
+    client:
+      client-id: pcb
+      client-secret: pcbsecret
+      authorized-grant-types: refresh_token,password
+      scope: read,write
+      accesss-token-validity-seconds: 3600
+      refresh-token-validity-seconds: 2592000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
         
 logging:
   level:
+    root: info
+    com.polykhel.pcb: debug
     org:
       hibernate:
         type: trace
