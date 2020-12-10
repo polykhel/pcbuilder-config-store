@@ -29,8 +29,6 @@ security:
     client:
       client-id: pcb
       client-secret: pcbsecret
-      authorized-grant-types: refresh_token,password
-      scope: read,write
       accesss-token-validity-seconds: 3600
       refresh-token-validity-seconds: 2592000
 
