@@ -22,7 +22,7 @@ spring:
         show_sql: true
         format_sql: true
   redis:
-    host: redis-service
+    host: redis
     
 security:
   oauth2:
