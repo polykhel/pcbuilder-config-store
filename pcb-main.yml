@@ -34,7 +34,7 @@ eureka:
 keycloak:
   auth-server-url: http://localhost:8080/auth
   realm: pcbuilder
-  resource: pcbuilder-app
+  resource: pcb-main
   public-client: true
         
 logging:
