@@ -35,7 +35,6 @@ keycloak:
   auth-server-url: http://localhost:8080/auth
   realm: pcbuilder
   resource: pcb-main
-  ssl-required: external
   credentials:
     secret: '{cipher}AgBYs3gnEmr/tkDWP8hgK+XxROH+ZE55SL498Rabf9Uifnre3IJ11DK8TvWr7fL38FlWtscVCJWmODKhMJKp8bLXEsZOCD/04RhdIMka7x7e0dnvc0U4Hv3jhVDhDxqmRhBfaXmUPgJanDjuGR9AGMspCW3eThj4/vZJGp16d8GPMGWcqkIOhlbtayP7doGSw6HUOmEnV2quwGiRw0/KfAFdqGuBmjc/GH8GksdA7yvoUj6SijhugbuirayYsPOT8ufrAGsWbMzN0qtw3HhGKr3PYbC+G43bJRuDrL39H7/8I3SeyslXmCqbO5XsV0Qjobnlu/pr0kgr9zAmxNwXQ6LOax+K7VEyv+xKnEZrOloiPJsG4+9GZZIl9EJTR4J9oEcH1zoDs3cPndiwD96fZWMWM8pQvH4fjaNDh1HnBA0TmI3A9vN8UOpcf2LqTPOq+fTWY1TnOsaqhqweE32DUxPjGMytt7pyHpdGX49e1omH5q64gdPomVyVKS8Yv5xTfeqXZm3GRcSbwZpsq5oeXiMHwbqJmsv67EeINrcBvseC16INznvut5WEWkzlo1RPl1396Zqhi+nBKg6whZzHnrNXvmX/0NpIbGMrqtLScq+CRoL8BxVayq2/gpPKLn/NZWP9wQg3xRWdRdaA1nFY9iHdGMY5HQNjfcCOjAZ3XbW0J7+6M1o4c9dvXWBD+MNdw+nhusXbdnUGiOWITrgJfWdq9XnyqE+yO7o5R1AV4G71/S/gJHnO2x5E+V0v3nx8zRg='
   use-resource-role-mappings: true
