@@ -5,6 +5,10 @@ server:
     timeout: 0
   
 spring:
+  data:
+    redis:
+      repositories:
+        enabled: false
   datasource:
     url: jdbc:mysql://localhost:3306/pcb_auth?serverTimeZone=Asia/Singapore
     username: root
@@ -22,14 +26,14 @@ spring:
         show_sql: true
         format_sql: true
   redis:
-    host: redis
+    host: localhost
     
 security:
   oauth2:
     client:
       client-id: pcb
       client-secret: pcbsecret
-      accesss-token-validity-seconds: 3600
+      access-token-validity-seconds: 3600
       refresh-token-validity-seconds: 2592000
 
 eureka:
